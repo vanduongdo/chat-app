@@ -7,4 +7,4 @@ services:
   api:
     build: ./server
     ports:
-      - 5000:5000
+      - 3001:3001

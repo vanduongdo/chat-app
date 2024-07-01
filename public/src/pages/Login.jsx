@@ -41,7 +41,7 @@ const Login = () => {
                     },
                 }
             );
-            console.log(data);
+
             if (data.status === false) {
                 toast.error(data.msg, toastOptions);
                 return;

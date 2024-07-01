@@ -44,23 +44,6 @@ const SetAvatar = () => {
         }
     };
 
-    // useEffect(() => {
-    //     const data = [];
-    //     const getAvatars = async () => {
-    //         const controller = new AbortController();
-    //         const { signal } = controller;
-    //         for (let i = 0; i < 4; i++) {
-    //             const image = await axios.get(
-    //               `${apiAvatar}/${Math.round(Math.random() * 1000)}`, { signal }
-    //             );
-    //             const buffer = Buffer.from(image.data);
-    //             data.push(buffer.toString("base64"));
-    //           }
-    //     }
-    //     getAvatars();
-    //     setAvatars(data);
-    //     setIsLoading(false);
-    //   }, [isLoading]);
 
     useEffect(() => {
         isMounted.current = true;
@@ -95,6 +78,8 @@ const SetAvatar = () => {
             isMounted.current = false;
         };
     }, [isLoading]);
+
+    // console.log('abcd');
 
     return (
         <>
